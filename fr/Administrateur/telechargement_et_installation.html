@@ -248,7 +248,7 @@ mysql&gt; exit</code></pre>
 <p><em>Note :</em> Si vous utilisez MySQL ou Postgresql, vous devrez <strong>remplir tous les champs</strong>, sinon l'installation ne fonctionera pas et un message d'erreur vous dira ce qui ne va pas. Vous devez créer manuellement la base de données qui sera utilisée par wallabag avec un outil comme PHPMyAdmin ou en ligne de commande.</p>
 <h3 id="permissions">Permissions</h3>
 <p>Le serveur web doit avoir accès en écriture aux répertoires <code>assets</code>, <code>cache</code> et <code>db</code>. Sans cela, un message vous indiquera que l'installation est impossible :</p>
-<pre><code>sudo chown -R www-data:www-data /var/www/html/wallabag</code></pre>
+<pre><code>sudo chown -R www-data:www-data /var/www/html/wallabag/assets /var/www/html/wallabag/cache /var/www/html/wallabag/db</code></pre>
 <h3 id="installation-de-wallabag-enfin">Installation de wallabag. Enfin.</h3>
 <p>Accédez à wallabag depuis votre navigateur : <code>http://votreserveur.com/wallabag</code>. Si votre serveur est bien configuré, vous arrivez sur l'écran d'installation.</p>
 <p>Renseignez le type de votre base de données (<code>sqlite</code>, <code>mysql</code> ou <code>postgresql</code>) et les informations de votre base de données. Dans le cas de la base MySQL créée plus haut, la configuration standard sera :</p>

@@ -248,7 +248,7 @@ mysql&gt; exit</code></pre>
 <p><em>Note:</em> If you're using MySQL or Postgresql, you have to <strong>fill all the fields</strong>, otherwise the installation will not work and an error message will tell you what's wrong. You must create the database that you will use for wallabag manually with a tool like PHPMyAdmin or the console.</p>
 <h3 id="permissions">Permissions</h3>
 <p>Your web server needs a writing access to the <code>assets</code>, <code>cache</code> and <code>db</code> directories. Otherwise, a message will report that the installation is impossible:</p>
-<pre><code>sudo chown -R www-data:www-data /var/www/html/wallabag</code></pre>
+<pre><code>sudo chown -R www-data:www-data /var/www/html/wallabag/assets /var/www/html/wallabag/cache /var/www/html/wallabag/db</code></pre>
 <h3 id="installation-of-wallabag-at-last">Installation of wallabag. At last.</h3>
 <p>Access to wallabag from your web browser: <code>http://yourserver.com/wallabag</code>. If your server is correctly configured, you directly reach the setup screen.</p>
 <p>Select the type of database (<code>sqlite</code>, <code>mysql</code> or <code>postgresql</code>) and fill the information about your database.
