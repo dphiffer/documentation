@@ -28,11 +28,11 @@ Then, jump off to next section.
 
 ### I want to download wallabag via composer
 
-You need to install composer: 
+You need to install composer:
 
     curl -s http://getcomposer.org/installer | php
 
-Next, on your web server, run this command: 
+Next, on your web server, run this command:
 
     composer create-project wallabag/wallabag . dev-master
 
@@ -42,10 +42,10 @@ All is downloaded into the current folder.
 
 Wallabag requires that several components to be installed on your web server.
 To make sure your server has all the prerequisites, open in your browser the page
-`http://monserveur.com/wallabag/install/index.php`.
+`http://yourserver.com/wallabag/install/index.php`.
 
-The components are:   
- 
+The components are:
+
 * [PHP 5.3.3 or above](http://php.net/manual/fr/install.php) **with [PDO](http://php.net/manual/en/book.pdo.php) support**
 * [XML for PHP](http://php.net/fr/xml)
 * [PCRE](http://php.net/fr/pcre)
@@ -56,7 +56,7 @@ The components are:
 * [GD](http://php.net/manual/en/book.image.php) (otherwise, pictures will not be saved)
 * [Tidy for PHP](http://php.net/fr/tidy) (otherwise, you may encounter problems with some pages)
 * [cURL](http://php.net/fr/curl) with `Parallel URL fetching` (optionnal)
-* [Parse ini file](http://uk.php.net/manual/en/function.parse-ini-file.php) 
+* [Parse ini file](http://uk.php.net/manual/en/function.parse-ini-file.php)
 * [allow_url_fopen](http://www.php.net/manual/fr/filesystem.configuration.php#ini.allow-url-fopen) (optionnal if cURL is installed)
 * [gettext](http://php.net/manual/fr/book.gettext.php) (required for multi-language support)
 
@@ -68,8 +68,8 @@ Install the missing components before to proceed. For example, to install Tidy o
 Note : if you're using IIS as a webserver, you have to disable *Anonymous Authentication* and [enable *Basic Authentication*](https://technet.microsoft.com/en-us/library/cc772009%28v=ws.10%29.aspx) in order to be able to login.
 
 #### Twig installation
-wallabag is build with Twig, a template library. You have to download it for wallabag to work. 
-If you cannot install `composer` (for example in the case of shared hosting), we offer you to download a file which includes `Twig`. This file can be downloaed from the page `http://myservur.com/wallabag/install/index.php` (section TWIG INSTALLATION) or directly at [http://wllbg.org/vendor](http://wllbg.org/vendor). Uncompress it in your wallabag directory.
+wallabag is build with Twig, a template library. You have to download it for wallabag to work.
+If you cannot install `composer` (for example in the case of shared hosting), we offer you to download a file which includes `Twig`. This file can be downloaed from the page `http://yourserver.com/wallabag/install/index.php` (section TWIG INSTALLATION) or directly at [http://wllbg.org/vendor](http://wllbg.org/vendor). Uncompress it in your wallabag directory.
 
 Otherwise, you can use Composer to install `Twig` by launching `composer` from your wallabag directory (in the case of Ubuntu/Debian too: <code>/var/www/html/wallabag/</code>) by following the commands written on screen:
 
@@ -88,7 +88,7 @@ We advice you to use MySQL because it is more efficient. In this case, you shoul
 
     mysql -p -u root
     mysql> CREATE DATABASE wallabag;
-    mysql> GRANT ALL PRIVILEGES ON `wallabag`.* TO 'wallabag'@'localhost' IDENTIFIED BY 'VotreMotdePasse';
+    mysql> GRANT ALL PRIVILEGES ON `wallabag`.* TO 'wallabag'@'localhost' IDENTIFIED BY 'YourPassWord';
     mysql> exit
 
 *Note:* If you're using MySQL or Postgresql, you have to **fill all the fields**, otherwise the installation will not work and an error message will tell you what's wrong. You must create the database that you will use for wallabag manually with a tool like PHPMyAdmin or the console.
@@ -101,9 +101,9 @@ Your web server needs a writing access to the `assets`, `cache` and `db` directo
 
 ### Installation of wallabag. At last.
 
-Access to wallabag from your web browser: `http://votreserveur.com/wallabag`. If your server is correctly configured, you directly reach the setup screen. 
+Access to wallabag from your web browser: `http://yourserver.com/wallabag`. If your server is correctly configured, you directly reach the setup screen.
 
-Select the type of database (`sqlite`, `mysql` or `postgresql`) and fill the information about your database. 
+Select the type of database (`sqlite`, `mysql` or `postgresql`) and fill the information about your database.
 In the case of the databse MySQL created before, the standard configuration will be:
 
     Database engine:    MySQL
