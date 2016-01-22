@@ -28,11 +28,11 @@ Puis sautez le paragraphe suivant.
 
 ### Je souhaite télécharger wallabag via composer
 
-Vous devez installer composer : 
+Vous devez installer composer :
 
     curl -s http://getcomposer.org/installer | php
 
-Ensuite, sur votre serveur web, exécutez cette commande : 
+Ensuite, sur votre serveur web, exécutez cette commande :
 
     composer create-project wallabag/wallabag . dev-master
 
@@ -41,10 +41,10 @@ Tout est téléchargé dans le répertoire courant.
 #### Pré-requis pour votre serveur web
 
 Wallabag nécessite qu'un certain nombre de composants soient installées sur votre serveur web.
-Pour être sûr que votre serveur possède tous les pré-requis, ouvrez dans votre navigateur la page `http://monserveur.com/wallabag/install/index.php`.
+Pour être sûr que votre serveur possède tous les pré-requis, ouvrez dans votre navigateur la page `http://votreserveur.com/wallabag/install/index.php`.
 
-Les composants sont :   
- 
+Les composants sont :
+
 * [PHP 5.3.3 ou plus](http://php.net/manual/fr/install.php) **avec support [PDO](http://php.net/manual/en/book.pdo.php)**
 * [XML pour PHP](http://php.net/fr/xml)
 * [PCRE](http://php.net/fr/pcre)
@@ -55,7 +55,7 @@ Les composants sont :
 * [GD](http://php.net/manual/en/book.image.php) (son absence empèchera la sauvegarde des images)
 * [Tidy pour PHP](http://php.net/fr/tidy) (son absence peut poser problème avec certaines pages)
 * [cURL](http://php.net/fr/curl) avec `Parallel URL fetching` (optionel)
-* [Parse ini file](http://uk.php.net/manual/en/function.parse-ini-file.php) 
+* [Parse ini file](http://uk.php.net/manual/en/function.parse-ini-file.php)
 * [allow_url_fopen](http://www.php.net/manual/fr/filesystem.configuration.php#ini.allow-url-fopen) (optionel si cURL présent)
 * [gettext](http://php.net/manual/fr/book.gettext.php) (nécessaire pour le support multilingues)
 
@@ -63,14 +63,14 @@ Installez les composants manquants avant de poursuivre. Par exemple pour install
 
     sudo apt-get install php5-tidy
     sudo service apache2 reload
-    
+
 Note : si voux utilisez IIS comme serveur web, vous devez interdire l'*Authentification Anonyme* et [permettre L'*Authentification de base*](https://technet.microsoft.com/fr-fr/library/cc772009%28v=ws.10%29.aspx) pour autoriser la connexion.
 
 #### Twig installation
 
 Pour pouvoir fonctionner, wallabag a besoin de `Twig`, une bibliothèque de modèles.
 Si vous ne pouvez pas installer `composer` (dans le cas d'hébergement mutualisé par exemple), nous vous proposons un fichier
-incluant `Twig`. Ce fichier peut être télécharger depuis la page `http://monserveur.com/wallabag/install/index.php` (section INSTALLATION TWIG) ou directement ici [http://wllbg.org/vendor](http://wllbg.org/vendor). Décompressez-le dans votre répertoire wallabag.
+incluant `Twig`. Ce fichier peut être télécharger depuis la page `http://votreserveur.com/wallabag/install/index.php` (section INSTALLATION TWIG) ou directement ici [http://wllbg.org/vendor](http://wllbg.org/vendor). Décompressez-le dans votre répertoire wallabag.
 
 Alternativement, vous pouvez installer `Twig` en lançant `composer` depuis votre dossier wallabag (toujours dans le cas d'Ubuntu/Debian : <code>/var/www/html/wallabag/</code>) en exécutant les commandes :
 
@@ -91,7 +91,7 @@ Nous vous conseillons d'utiliser MySQL, plus performante. Il est alors nécessai
     mysql> CREATE DATABASE wallabag;
     mysql> GRANT ALL PRIVILEGES ON `wallabag`.* TO 'wallabag'@'localhost' IDENTIFIED BY 'VotreMotdePasse';
     mysql> exit
-    
+
 *Note :* Si vous utilisez MySQL ou Postgresql, vous devrez **remplir tous les champs**, sinon l'installation ne fonctionera pas et un message d'erreur vous dira ce qui ne va pas. Vous devez créer manuellement la base de données qui sera utilisée par wallabag avec un outil comme PHPMyAdmin ou en ligne de commande.
 
 ### Permissions
