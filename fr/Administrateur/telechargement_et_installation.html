@@ -198,15 +198,15 @@ mv wallabag-version-number wallabag</code></pre>
 <pre><code>sudo mv wallabag /var/www/html/</code></pre>
 <p>Puis sautez le paragraphe suivant.</p>
 <h3 id="je-souhaite-tlcharger-wallabag-via-composer">Je souhaite télécharger wallabag via composer</h3>
-<p>Vous devez installer composer : </p>
+<p>Vous devez installer composer :</p>
 <pre><code>curl -s http://getcomposer.org/installer | php</code></pre>
-<p>Ensuite, sur votre serveur web, exécutez cette commande : </p>
+<p>Ensuite, sur votre serveur web, exécutez cette commande :</p>
 <pre><code>composer create-project wallabag/wallabag . dev-master</code></pre>
 <p>Tout est téléchargé dans le répertoire courant.</p>
 <h4 id="pr-requis-pour-votre-serveur-web">Pré-requis pour votre serveur web</h4>
 <p>Wallabag nécessite qu'un certain nombre de composants soient installées sur votre serveur web.
-Pour être sûr que votre serveur possède tous les pré-requis, ouvrez dans votre navigateur la page <code>http://monserveur.com/wallabag/install/index.php</code>.</p>
-<p>Les composants sont :   </p>
+Pour être sûr que votre serveur possède tous les pré-requis, ouvrez dans votre navigateur la page <code>http://votreserveur.com/wallabag/install/index.php</code>.</p>
+<p>Les composants sont :</p>
 <ul>
 <li><a href="http://php.net/manual/fr/install.php">PHP 5.3.3 ou plus</a> <strong>avec support <a href="http://php.net/manual/en/book.pdo.php">PDO</a></strong></li>
 <li><a href="http://php.net/fr/xml">XML pour PHP</a></li>
@@ -218,7 +218,7 @@ Pour être sûr que votre serveur possède tous les pré-requis, ouvrez dans vot
 <li><a href="http://php.net/manual/en/book.image.php">GD</a> (son absence empèchera la sauvegarde des images)</li>
 <li><a href="http://php.net/fr/tidy">Tidy pour PHP</a> (son absence peut poser problème avec certaines pages)</li>
 <li><a href="http://php.net/fr/curl">cURL</a> avec <code>Parallel URL fetching</code> (optionel)</li>
-<li><a href="http://uk.php.net/manual/en/function.parse-ini-file.php">Parse ini file</a> </li>
+<li><a href="http://uk.php.net/manual/en/function.parse-ini-file.php">Parse ini file</a></li>
 <li><a href="http://www.php.net/manual/fr/filesystem.configuration.php#ini.allow-url-fopen">allow_url_fopen</a> (optionel si cURL présent)</li>
 <li><a href="http://php.net/manual/fr/book.gettext.php">gettext</a> (nécessaire pour le support multilingues)</li>
 </ul>
@@ -229,7 +229,7 @@ sudo service apache2 reload</code></pre>
 <h4 id="twig-installation">Twig installation</h4>
 <p>Pour pouvoir fonctionner, wallabag a besoin de <code>Twig</code>, une bibliothèque de modèles.
 Si vous ne pouvez pas installer <code>composer</code> (dans le cas d'hébergement mutualisé par exemple), nous vous proposons un fichier
-incluant <code>Twig</code>. Ce fichier peut être télécharger depuis la page <code>http://monserveur.com/wallabag/install/index.php</code> (section INSTALLATION TWIG) ou directement ici <a href="http://wllbg.org/vendor"><a href="http://wllbg.org/vendor">http://wllbg.org/vendor</a></a>. Décompressez-le dans votre répertoire wallabag.</p>
+incluant <code>Twig</code>. Ce fichier peut être télécharger depuis la page <code>http://votreserveur.com/wallabag/install/index.php</code> (section INSTALLATION TWIG) ou directement ici <a href="http://wllbg.org/vendor"><a href="http://wllbg.org/vendor">http://wllbg.org/vendor</a></a>. Décompressez-le dans votre répertoire wallabag.</p>
 <p>Alternativement, vous pouvez installer <code>Twig</code> en lançant <code>composer</code> depuis votre dossier wallabag (toujours dans le cas d'Ubuntu/Debian : <code>/var/www/html/wallabag/</code>) en exécutant les commandes :</p>
 <pre><code>curl -s http://getcomposer.org/installer | php
 php composer.phar install</code></pre>
