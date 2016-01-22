@@ -198,16 +198,16 @@ mv wallabag-version-number wallabag</code></pre>
 <pre><code>sudo mv wallabag /var/www/html/</code></pre>
 <p>Then, jump off to next section.</p>
 <h3 id="i-want-to-download-wallabag-via-composer">I want to download wallabag via composer</h3>
-<p>You need to install composer: </p>
+<p>You need to install composer:</p>
 <pre><code>curl -s http://getcomposer.org/installer | php</code></pre>
-<p>Next, on your web server, run this command: </p>
+<p>Next, on your web server, run this command:</p>
 <pre><code>composer create-project wallabag/wallabag . dev-master</code></pre>
 <p>All is downloaded into the current folder.</p>
 <h4 id="prerequisites-for-your-web-server">Prerequisites for your web server</h4>
 <p>Wallabag requires that several components to be installed on your web server.
 To make sure your server has all the prerequisites, open in your browser the page
-<code>http://monserveur.com/wallabag/install/index.php</code>.</p>
-<p>The components are:   </p>
+<code>http://yourserver.com/wallabag/install/index.php</code>.</p>
+<p>The components are:</p>
 <ul>
 <li><a href="http://php.net/manual/fr/install.php">PHP 5.3.3 or above</a> <strong>with <a href="http://php.net/manual/en/book.pdo.php">PDO</a> support</strong></li>
 <li><a href="http://php.net/fr/xml">XML for PHP</a></li>
@@ -219,7 +219,7 @@ To make sure your server has all the prerequisites, open in your browser the pag
 <li><a href="http://php.net/manual/en/book.image.php">GD</a> (otherwise, pictures will not be saved)</li>
 <li><a href="http://php.net/fr/tidy">Tidy for PHP</a> (otherwise, you may encounter problems with some pages)</li>
 <li><a href="http://php.net/fr/curl">cURL</a> with <code>Parallel URL fetching</code> (optionnal)</li>
-<li><a href="http://uk.php.net/manual/en/function.parse-ini-file.php">Parse ini file</a> </li>
+<li><a href="http://uk.php.net/manual/en/function.parse-ini-file.php">Parse ini file</a></li>
 <li><a href="http://www.php.net/manual/fr/filesystem.configuration.php#ini.allow-url-fopen">allow_url_fopen</a> (optionnal if cURL is installed)</li>
 <li><a href="http://php.net/manual/fr/book.gettext.php">gettext</a> (required for multi-language support)</li>
 </ul>
@@ -229,7 +229,7 @@ sudo service apache2 reload</code></pre>
 <p>Note : if you're using IIS as a webserver, you have to disable <em>Anonymous Authentication</em> and <a href="https://technet.microsoft.com/en-us/library/cc772009%28v=ws.10%29.aspx">enable <em>Basic Authentication</em></a> in order to be able to login.</p>
 <h4 id="twig-installation">Twig installation</h4>
 <p>wallabag is build with Twig, a template library. You have to download it for wallabag to work.
-If you cannot install <code>composer</code> (for example in the case of shared hosting), we offer you to download a file which includes <code>Twig</code>. This file can be downloaed from the page <code>http://myservur.com/wallabag/install/index.php</code> (section TWIG INSTALLATION) or directly at <a href="http://wllbg.org/vendor"><a href="http://wllbg.org/vendor">http://wllbg.org/vendor</a></a>. Uncompress it in your wallabag directory.</p>
+If you cannot install <code>composer</code> (for example in the case of shared hosting), we offer you to download a file which includes <code>Twig</code>. This file can be downloaed from the page <code>http://yourserver.com/wallabag/install/index.php</code> (section TWIG INSTALLATION) or directly at <a href="http://wllbg.org/vendor"><a href="http://wllbg.org/vendor">http://wllbg.org/vendor</a></a>. Uncompress it in your wallabag directory.</p>
 <p>Otherwise, you can use Composer to install <code>Twig</code> by launching <code>composer</code> from your wallabag directory (in the case of Ubuntu/Debian too: <code>/var/www/html/wallabag/</code>) by following the commands written on screen:</p>
 <pre><code>curl -s http://getcomposer.org/installer | php
 php composer.phar install</code></pre>
@@ -243,14 +243,14 @@ php composer.phar install</code></pre>
 <p>We advice you to use MySQL because it is more efficient. In this case, you should create a new database (for example <code>wallabag</code>),  a new user (for example  <code>wallabag</code>) and a password (here <code>YourPassWord</code>). To do this, you can use <code>phpMyAdmin</code>, or launch the following commands:</p>
 <pre><code>mysql -p -u root
 mysql&gt; CREATE DATABASE wallabag;
-mysql&gt; GRANT ALL PRIVILEGES ON `wallabag`.* TO 'wallabag'@'localhost' IDENTIFIED BY 'VotreMotdePasse';
+mysql&gt; GRANT ALL PRIVILEGES ON `wallabag`.* TO 'wallabag'@'localhost' IDENTIFIED BY 'YourPassWord';
 mysql&gt; exit</code></pre>
 <p><em>Note:</em> If you're using MySQL or Postgresql, you have to <strong>fill all the fields</strong>, otherwise the installation will not work and an error message will tell you what's wrong. You must create the database that you will use for wallabag manually with a tool like PHPMyAdmin or the console.</p>
 <h3 id="permissions">Permissions</h3>
 <p>Your web server needs a writing access to the <code>assets</code>, <code>cache</code> and <code>db</code> directories. Otherwise, a message will report that the installation is impossible:</p>
 <pre><code>sudo chown -R www-data:www-data /var/www/html/wallabag</code></pre>
 <h3 id="installation-of-wallabag-at-last">Installation of wallabag. At last.</h3>
-<p>Access to wallabag from your web browser: <code>http://votreserveur.com/wallabag</code>. If your server is correctly configured, you directly reach the setup screen. </p>
+<p>Access to wallabag from your web browser: <code>http://yourserver.com/wallabag</code>. If your server is correctly configured, you directly reach the setup screen.</p>
 <p>Select the type of database (<code>sqlite</code>, <code>mysql</code> or <code>postgresql</code>) and fill the information about your database.
 In the case of the databse MySQL created before, the standard configuration will be:</p>
 <pre><code>Database engine:    MySQL
