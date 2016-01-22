@@ -40,7 +40,7 @@ menu:
                         multiusers:
                             text: Multi users
                             relativeUrl: en/Administrator/multiusers.html
-                        sessions: 
+                        sessions:
                             text: Sessions issues
                             relativeUrl: en/Administrator/sessions.html
                 user:
@@ -61,9 +61,9 @@ menu:
                         search:
                             text: Search
                             relativeUrl: en/User/search.html
-                        epub:
-                            text: ePub conversion
-                            relativeUrl: en/User/epub_conversion.html
+                        ebook:
+                            text: eBook conversion
+                            relativeUrl: en/User/ebook_conversion.html
                         issue:
                             text: Issue with article
                             relativeUrl: en/User/issue_with_article.html
