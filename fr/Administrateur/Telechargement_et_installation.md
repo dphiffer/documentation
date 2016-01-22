@@ -98,7 +98,7 @@ Nous vous conseillons d'utiliser MySQL, plus performante. Il est alors nécessai
 
 Le serveur web doit avoir accès en écriture aux répertoires `assets`, `cache` et `db`. Sans cela, un message vous indiquera que l'installation est impossible :
 
-    sudo chown -R www-data:www-data /var/www/html/wallabag
+    sudo chown -R www-data:www-data /var/www/html/wallabag/assets /var/www/html/wallabag/cache /var/www/html/wallabag/db
 
 ### Installation de wallabag. Enfin.
 
