@@ -1,6 +1,10 @@
 ---
 layout:	home
 ---
+
+### BE CAREFUL, the documention has **moved to a [new repository](https://github.com/wallabag/wallabag/tree/v2/docs)**.
+
+
 #Documentation
 **Welcome to the Wallabag Documentation**. Use this tool to setup and interact with the Wallabag software.
 
