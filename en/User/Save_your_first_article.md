@@ -4,17 +4,15 @@ currentMenu: save_article
 subTitle: Save your first article
 ---
 
-# Save your first article
+# Saving Your First Article
 
-Once connected on wallabag, you have many ways to save an article.
+Articles in Wallabag can be saved in a variety of ways:
 
-## From the web application
+## From the Web Application
 
-Let's see first how to do from the web application. In the menu, you have a link **save a link**. Clicking on it, a form shows up: you simply have to type the web adress of the article you want to save.
+Find the **save a link** option in the Wallabag menu and enter the URL of the desired page. Click **Confirm** to store the contents of the article.
 
-Confirm to store the content of the article.
-
-By default, only the text is saved. If you want to store a copy of the images on your server, you have to enable the setting *DOWNLOAD_PICTURES*. Read the chapter on hidden options for more information.
+By default, only the text is saved. To save images, enable the setting *DOWNLOAD_PICTURES*. Read the chapter on hidden options for more information.
 
 ## From the bookmarklet
 
@@ -26,65 +24,66 @@ From [Wikipedia's definition](http://fr.wikipedia.org/wiki/Bookmarklet)
 
 > When clicked, a bookmarklet performs some function, one of a wide variety such as a search query or data extraction. Bookmarklets are usually [JavaScript programs](http://en.wikipedia.org/wiki/Computer_program).
 
-From the wallabag's menu, click on **settings**. On the first part of this page, we have listed all the ways to save an article. You'll find the bookmarklet (it's the `Bag it!` link) to drag and drop in the bookmarks bar of your web browser.
-From now on, when you want to save the article you are browsing, you just have to click on this bookmarklet and the article will be automatically saved.
+This option provides a Bookmarklet in the Bookmarks bar of the user's web browser. Clicking the bookmarklet saves articles to the user's Wallabag account. Follow the steps to set this up:
 
-## From your smartphone
+1. Click **Config** in the Wallabag menu. 
+2. Find the bookmarklet option (the `Bag it!` link) and drag & drop it into the web browser bookmarks bar.
+3. Search for a website and click the bag it bookmarklet to save the article to the user's Wallabag account.
+
+## From a smartphone
 
 ### Above all else
 
-To use a smartphone application, you have to enable RSS feeds from the settings panel of wallabag. Then some information will be displayed, like your security token. Read the chapter on RSS feeds for more information.
+To use a smartphone application, RSS feeds must be enabled from the **Config** menu. Read the chapter on [RSS Feeds](RSS_feed.md) for more information.
 
 ### Android
 
 #### Installation and configuration
 
-You can download the android application from the [Google Play Store](https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche) and from [F-droid](https://f-droid.org/app/fr.gaulupeau.apps.InThePoche). It's the exact same application on those two stores.
+The Android app can be downloaded from the [Google Play Store](https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche) and from [F-droid](https://f-droid.org/app/fr.gaulupeau.apps.InThePoche). The app is identical on either store.
 
-Once installed, start the application, go to the **settings** part et fill in the **URL (complete address of your wallabag installation or your Framabag account)** and **User ID (in most cases, you'll have to put 1)** fields. If you have created multiple accounts from wallabag, you will have to to fill the user account you want to connect to your application and your security **Token** (enter properly all the token's letters as seen in the settings part of wallabag).
+Once installed, start the application by going to the **settings** menu and filling in the **URL (the  complete address of the Wallabag installation or  Framabag account)** and **User ID** fields. If multiple Wallabag accounts exist, The User Account and **Token** will need to be entered. (Enter all token letters as seen in the settings part of Wallabag).
 
 #### Saving of an article
 
-Now that everything is correctly set up, as soon as you browse on your smartphone's web browser, you can share an article in wallabag at any time from the **Share** menu: you'll find a **Bag it!** entry which will add your article in wallabag.
+Once set up, articles can be shared from the phone web browser using the **Share** menn. A **Bag it!** entry in the share menu will save the article to Wallabag.
 
 #### Reading
 
-When you open the application, click on Synchronize: your recently saved articles will be downloaded on your smartphone.
+When opening the application, click on Synchronize: recently saved articles will be downloaded to the smartphone. This will allow for offline reading.
 
-You don't need an internet connection anymore: click on **List articles** to start your reading.
+At the end of each article, a **Mark as read** button will archive it.
 
-At the end of each article, a **Mark as read** button allows you to archive the article.
-
-To date, the synchronisation occurs in one direction (from wallabag to the application), thus preventing mark as read an article on wallabag from your smartphone.
+To date, the synchronisation occurs in one direction (from Wallabag to the application), meaning that articles read on the device will not be synchronized to the Wallabag account.
 
 ### iOS
 
 #### Installation and configuration
 
-You can download the iOS application from the [AppStore](https://itunes.apple.com/app/id828331015).
+The iOS application can be downloaded from the [AppStore](https://itunes.apple.com/app/id828331015).
 
-Once installed, configure the app by filling following fields inside the settings: the **URL (complete address of your wallabag installation or your Framabag account)** and **User ID (in most cases, you'll have to put 1)** field. If you have created multiple accounts from wallabag, you will have to to fill the user account you want to connect to your application and your security **Token** (enter properly all the token's letters as seen in the settings part of wallabag).
+Once installed, start the application by going to the **settings** menu and filling in the **URL (the  complete address of the Wallabag installation or  Framabag account)** and **User ID** fields. If multiple Wallabag accounts exist, The User Account and **Token** will need to be entered. (Enter all token letters as seen in the settings part of Wallabag).
 
 #### Usage
 
-If the app is configured correctly, the app will automatically download the articles from your wallabag (use **pull-to-refresh** to trigger this update manually). Once an article is downloaded, it'll be available offline from your app.
+If the app is configured correctly, it will automatically download the articles from the user's Wallabag account (use **pull-to-refresh** to trigger this update manually). This will allow for offline reading.
 
-Unfortunately you can only locally mark an article as read (it will not synchronise to your online wallabag).
+To date, the synchronisation occurs in one direction (from Wallabag to the application), meaning that articles read on the device will not be synchronized to the Wallabag account.
 
 ### Saving articles
 
-If you're browsing a website and want to add the current article to your wallabag, simply tap the **Share**-button and select **Bag it!** (if you don't find the wallabag icon, have a look in the **more**-menu). If everything is set up correctly, your article will be saved (you may have to login from time to time).
+When browsing a website simply tap the **Share**-button and select **Bag it!** (if the Wallabag icon is not available, click the **more** menu to find it). If everything is set up correctly, the article will be saved (a login process may be required occasionally).
 
 ###Windows Phone
 ####Installation and configuration
 
-You can download the Windows Phone application from the [Windows Store](https://www.microsoft.com/en-us/store/apps/wallabag/9nblggh11646) or directly from your smartphone's Store.
+The Windows Phone application can be found in the [Windows Store](https://www.microsoft.com/en-us/store/apps/wallabag/9nblggh11646) or directly from the smartphone's Store.
 
-Once installed, the application will show you a notification on the first launch, asking the configuration of your wallabag server. Go to the **Settings** part of the application by pressing the three dots menu at the bottom of the screen, then fill in the **URL (complete address of your wallabag installation or your Framabag account)** and **User ID (in most cases, you'll have to put 1)** fields.
+Once installed, the application will show a notification on the first launch, asking for configuration of the Wallabag server. Go to the **Settings** part of the application by pressing the three dots menu at the bottom of the screen, then fill in the **URL (complete address of your wallabag installation or your Framabag account)** and **User ID (in most cases, you'll have to put 1)** fields.
 
-If you have created multiple accounts from wallabag, you will have to to fill the user account you want to connect to your application and your security **Token** (enter properly all the token's letters as seen in the setting part of wallabag).
+If multiple Wallabag accounts exist, The User Account and **Token** will need to be entered. (Enter all token letters as seen in the settings part of Wallabag).
 
-## From your web browser
+## From the web browser
 
 ### Firefox Classic Add-on
 
@@ -92,7 +91,7 @@ Download the Firefox add-on at [addons.mozilla.org](https://addons.mozilla.org/f
 
 In the add-on's settings, fill the complete URL of your installation of wallabag or your Framabag account.
 
-Personalize the Firefox toolbar to add wallabag (**W** icon). When you find an article you want to save, click on this icon: a new window will open to add the article and will close itself automatically.
+Personalize the Firefox toolbar to add the Wallabag (**W** icon). When saving an article, click on this icon: a new window will open to add the article and will close itself automatically.
 
 ### Firefox Social API Service
 
@@ -109,7 +108,7 @@ Download the Chrome add-on [on the dedicated website](https://chrome.google.com/
 
 In the add-on's settings, fill the complete URL of your installation of wallabag or your Framabag account.
 
-During the addon's installation, a new icon appear in Chrome toolbar (a **W** icon). When you find an article you want to save, click on this icon: a popup will appear to confirm that your article has been saved.
+During the addon's installation, a new icon appear in Chrome toolbar (a **W** icon). When saving an article, click on this icon: a new window will open to confirm the action.
 
 ### Opera
 

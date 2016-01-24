@@ -1,4 +1,7 @@
-**Welcome on wallabag documentation**. Thanks to this tool, we hope that you can easily use wallabag and work with it. 
+#Welcome 
+Welcome to the Wallabag documentation. 
+Use this tool to administer, use and make changes to the Wallabag software.
 
-Today, we have two documentations: for **users** and for **developers**. Just select your language and good reading!  
-Feel free to [contribute to this documentation](https://github.com/wallabag/documentation). It's your documentation. 
+Documentation for **Users**, **Developers**, and **Administrators** is provided.
+
+Documentation can be contributed to at the following [Github repository](https://github.com/wallabag/documentation). It's your documentation.
