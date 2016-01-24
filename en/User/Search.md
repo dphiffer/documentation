@@ -4,18 +4,18 @@ currentMenu: search
 subTitle: Search content
 ---
 
-# Search content in wallabag
+# Searching Content in Wallabag
 
-To enable you to find an article quickly, we set up a full search engine.
+A full search engine is available in Wallabag to allow for easy access and sorting of saved articles.
 
-Click on **Search** in the wallabag menu. Then, enter your search terms.
+Click on **Search** in the Wallabag menn and enter the search terms.
 
-wallabag will go through all your articles, and lists the ones containing the search terms in their title, their content or their URL.
+Wallabag will go through all articles and list the ones containing the search terms in their title and content.
 
-## Convert this search into ePub format
+## Converting search results into ePub format:
 
-You can convert the listed articles to the ePub format, so that you can read them in your e-reader, for example. Look at [ePub conversion](epub_conversion.md) for more about this.
+Listed articles can be converted to the ePub format, so that they can be read from an e-reader. More information can be found in the [ePub conversion](epub_conversion.md) chapter.
 
-## Assign a tag to your search results
+## Assigning a tag to the search results
 
-You can create a tag based on your search criteria. Look at [Organize articles](Organize_articles.md) for more about this.
+A tag can be created based on the search criteria. Look at the chapter on [Organizing articles](Organize_articles.md) for more on this topic.

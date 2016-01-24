@@ -1,10 +1,17 @@
 ---
-layout: home
+layout:	home
 ---
+#Documentation
+**Welcome to the Wallabag Documentation**. Use this tool to setup and interact with the Wallabag software.
 
-**Welcome on wallabag documentation**. Thanks to this tool, we hope that you can easily use wallabag and work with it.
+There are three versions of the documentation: 
 
-Today, we have three documentations: for **users**, for **developers** and for **administrators**. Just select your language and good reading!  
+* **Users**  
+* **Developers** 
+* **Administrators**
+
+Select your language and good reading!  
+
 Feel free to [contribute to this documentation](https://github.com/wallabag/documentation): it's your documentation.
 
 This documentation is generated thanks to [couscous.io](http://couscous.io/).

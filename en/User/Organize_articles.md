@@ -4,67 +4,63 @@ currentMenu: sort_article
 subTitle: Organize articles
 ---
 
-# Organize articles
+# Organizing Articles:
 
-To be able to find more easily your articles, several methods are available. 
+There are several methods available to sort and manage your articles.
 
 
-## Tags
-### Assign a tag
-#### When saving an article
+## Tags:
 
-To tag an article when saving it, just click on the tag icon next to the URL field before hitting the Save button. At the moment, it is possible only to do this from the web interface, but it could come to some apps or extensions.
+### Assigning a tag
 
-#### From the article
+#### When saving an article:
 
-To tag an already-saved article, go to the reading page of the article. There is a part `tags` followed with a pencil. Click on the pencil.
+To tag an article when saving it, just click on the tag icon next to the URL field before hitting the **Save** button. At the moment, it is possible only to do this from the web interface, but it could come to some apps or extensions.
 
-Input in the box the tags you want to assign. Add as many tags as you want. They need to be separated by commas and not spaces. Auto-completion is available here: when you type the first letters of an existing tag, it is not necessary to type the whole word. Select it in the drop-down list. Once all your tags are inputted, click  on the button **Tag**.
+#### From the article:
 
-Then, you can go back to your article and read it.
+To tag an already-saved article, go to the reading page of the article. Find the section which says **Tags** which is indicated with a pencil and click this button.
 
-#### From the search
+Enter as many tags that you wish to assign seperated by  **commas**, not spaces. Auto-completion is available here: when you type the first letters of an existing tag, it is not necessary to type the whole word. Select it in the drop-down list. Once all your tags are entered, click  on the button **Tag**.
 
-A full chapter on search is available. Here, we will describe only how to assign a tag from your search.
+#### From the search:
 
-When your search displays results, there is a link `Apply the tag ABCD to this search` at the bottom of the page. Click on it: a tad depending on your search (here `ABCD`) will be assigned to all the articles found.
+A full chapter on the topic of search can be found [here](Search.md). Here, we will describe only how to assign a tag from your search.
 
-### Find all the articles with a given tag
+When your search displays results, you will find a link `Apply the tag [example] to this search` at the bottom of the page. Click on this to assign the tag to the articles.
 
-In the wallabag menu, click on **Tags**. Then, all the tags you have created are displayed, sorted by the number of articles for each tag. Click on one of these tags to find all the articles with this tag.
+### Find all the articles with a given tag:
 
-## Preferred articles
+In the wallabag menu, click on **Tags**. All the tags that have been created will be displayed and sorted by the number of articles for each tag. Click on one of these tags to find all the articles associated with this tag.
 
-When you wish to set aside an article, you can mark it as preferred.
+## Preferred articles:
 
-### Set an article as favorite
+Articles can be marked as **Preferred** to be set aside for later.
 
-From the reading page of an article, or from a list of articles (such as the list of unread articles), you can set an article as favorite simply by a click on the star which is displayed.
-Click again on the star will remove the **favorite** status of this article.
+### Set an article as Favorite:
 
-### Find all the favorite articles
+Articles can be set as **Favorite** from the reading page of an article, or from a list of articles (such as the list of unread articles), simply by clicking the Star.
+Clicking the star a second time will remove the **favorite** status of this article.
 
-In the wallabag menu, click on **Favorites** to display the list of all the articles that you have set as favorite.
+### Finding all the favorite articles:
+
+In the Wallabag menu, click on **Favorites** to display the list of all the articles that have been set as favorite.
 
 ## Archived articles
 
-When you have read an article, you can archive it: hence it will not be displayed in your list of unread articles.
+Articles can be archived after reading to be removed from the list but still be retained in the Wallabag account.
 
-Archiving an article does not remove it from wallabag.
+### Archiving an article:
 
-### Archive an article
+Articles can be archived from the reading page of an article, or from a list of articles (such as the list of unread articles), by clicking on the icon ✓.  
+Clicking on this icon a second time will return the status of the article to **unread**.
 
-From the reading page of an article, or from a list of articles (such as the list of unread articles), you can archive an article simply by clicking on the icon ✓.  
-Click again on this icon will set back the **unread** status of the article.
+### Finding all archived articles:
 
-### Find all the archived articles
+In the Wallabag menu, click on **Archive** to find all the articles that have been archived.
 
-In the wallabag menu, click on **Archive** to find all the articles that you have archived.
+## Deleting an article:
 
-## Delete an article
+**Caution:** deleting an article is **definitive**. It will be deleted from the Wallabag database.
 
-Be cautious: the deletion of an article is **definitive**. It is deleted from the wallabag database.
-
-To delete an article, a trash icon is displayed on the page of an article or of a list of articles (unread articles, favorites or archived, for example).
-
-We trust you: that is why there is no confirmation message during the deletion.
+To delete an article, a trash icon is displayed on the page of an article or of a list of articles (**unread**, **favorites** or **archived**). Wallabag trusts that you know what you are doing and will not issue a warning message to confirm your selection.

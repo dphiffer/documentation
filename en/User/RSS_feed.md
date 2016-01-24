@@ -6,31 +6,32 @@ subTitle: RSS feed
 
 # RSS feed
 
-The RSS feeds allow you to:
+The RSS feed allows:
 
-* read your articles from your favorite RSS feed reader.
-* to activate the reading features for smartphone softwares
+* reading of articles from a preferred RSS feed reader.
+* reading from smartphone software.
 
-First, you must activate the RSS feature by generating a feed token.  
-Go to **config** in wallabag and generate a token in the section **Feeds**.
-You can generate a new token at any time.
+First, the RSS feature must be activated by generating a feed token.  
+Go to **config** in Wallabag and generate a token in the section **Feeds**.
+Tokens can be generated at any time.
 
 ## Read articles
 
-Once the token created, you have access to three RSS feeds:
+Once the token is created, three RSS feeds will be available:
 
-* the one of the unread articles
-* the one of the favorites articles
-* the one of the archived articles
+* Unread articles
+* Favorites articles
+* Archived articles
 
-Add the feed you want to your RSS feed reader.
-Be careful: when you will be reading an article from your feed reader, this will not set it as read in wallabag.
+Add the desired feed to the RSS feed reader.
 
-### Share your readings
+**Note**: reading an article from the RSS Feed Reader will not set the article status as *Read*
 
-If you wish to share your readings with somebody, send him for example the RSS feed of your favorite articles.
-Hence, as soon as an article will be set as favorite in wallabag, this person will be able to read it too.
+### Sharing feeds:
 
-## Activate the features for smartphones
+Article feeds can be shared by sharing the RSS Feed.
+Once an article is set as favorite in Wallabag, it will be able to be read by another user.
 
-You ave created an RSS feed token. It will also be useful to you to configure your smartphone software. For more information about smartphone sofwares, you can read [Save your first article](Save_your_first_article.md).
+## Activating the Smartphone Features
+
+RSS Feed Tokens can be used in conjunction with smartphone software. For more information about smartphone sofware, see [Saving Your First Article](Save_your_first_article.md).

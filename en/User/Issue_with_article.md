@@ -5,11 +5,11 @@ subTitle: Issue with article
 ---
 
 
-# My article is not displayed properly in wallabag
+# My article is not displaying properly in Wallabag
 
-If you think wallabag do not copy well the content of an article (empty or incomplete text), here are some suggestions.
+If you think Wallabag did not copy the content of an article well (empty or incomplete text), here are some suggestions.
 
-## Ask for help
+## Ask for Help:
 
 Via an email or a ticket, do not forget to give some information that are important for us to better solve the problem:
 
@@ -18,7 +18,7 @@ Via an email or a ticket, do not forget to give some information that are import
 * What you were expecting
 * The wallabag version of if you use Framabag
 
-### Open a ticket on github
+### Open a ticket on Github
 
 To open a new ticket, you should [go to github](https://github.com/wallabag/wallabag/issues/new). An account is required.
 Do not forget to send us the information listed above.
