@@ -185,14 +185,23 @@
                     <a href="https://github.com/wallabag/documentation/blob/master/en/Administrator/sessions.md">
                         Edit this page on GitHub
                     </a>
-                    <p>If you end up disconnected even while checking the <em>Stay signed in checkbox</em>, please run the following commands as root (or with sudo) :</p>
-<pre><code>mkdir /var/lib/wallabag-sessions
-chown www-data:www-data /var/lib/wallabag-sessions</code></pre>
-<p><em>NOTE : The www-data user and group may not exist, you may use <code>chown http:http /var/lib/wallabag-sessions</code> instead</em></p>
-<p>Then, using apache add: <code>php_admin_value session.save_path /var/lib/wallabag-sessions</code> to your apache vhost, for instance <code>wallabag-apache.conf</code>
+                    <h1 id="session-issues">Session Issues:</h1>
+<p>If you end up disconnected even while checking the <em>Stay Signed In</em> checkbox, you can run the following commands as root (or with sudo):</p>
+<ul>
+<li>
+<p>``` mkdir /var/lib/wallabag-sessions
+chown www-data:www-data /var/lib/wallabag-sessions</p>
+<pre><code>
+*Note that if the www-data user does not exist you can use:* 
+```chown http:http /var/lib/wallabag-sessions```</code></pre>
+</li>
+<li>
+<p>Using Apache add: <code>php_admin_value session.save_path /var/lib/wallabag-sessions</code> to your Apache vhost. For example: <code>wallabag-apache.conf</code>
 Finally, restart apache, for instance like this : <code>/etc/init.d/apache2 restart</code> </p>
 <p>If you're using nginx, add <code>php_admin_value[session.save_path] = /var/lib/wallabag-sessions</code> in your nginx configuration file.
 Then, restart nginx : <code>/etc/init.d/nginx restart</code></p>
+</li>
+</ul>
 <p><em>NOTE : If you're using systemd, you should do <code>systemctl restart apache2</code> (or nginx).</em></p>
                 </section>
 

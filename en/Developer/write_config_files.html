@@ -186,19 +186,19 @@
                         Edit this page on GitHub
                     </a>
                     <h1 id="write-config-files">Write config files</h1>
-<p>wallabag can use specific site config files to parse website articles. These files are stored in the <a href="https://github.com/wallabag/wallabag/tree/master/inc/3rdparty/site_config/standard"><code>inc/3rdparty/site_config/standard</code></a> folder.</p>
+<p>Wallabag can use specific site config files to parse website articles. These files are stored in the <a href="https://github.com/wallabag/wallabag/tree/master/inc/3rdparty/site_config/standard"><code>inc/3rdparty/site_config/standard</code></a> folder.</p>
 <p>The format used for these files is <a href="http://www.w3.org/TR/xpath20/">XPath</a>. Look at some examples in the folder.</p>
-<h2 id="automatic-config-files-generation">Automatic config files generation</h2>
-<p>Fivefilters has created a <a href="http://siteconfig.fivefilters.org/">very useful tool</a> to create config files. You just type in the adress of the article to work on with, and you select the area containing the content you want.</p>
+<h2 id="automatic-config-file-generation">Automatic Config File Generation:</h2>
+<p>Fivefilters has created a <a href="http://siteconfig.fivefilters.org/">very useful tool</a> to create config files. Just type in the address of the article to work with, and select the area containing the content wanted.</p>
 <p><img src="https://lut.im/RNaO7gGe/l9vRnO1b" alt="siteconfig" /></p>
-<p>You should confirm this area by trying with other articles.<br />
-When you got the right area, just click on <em>Download Full-Text RSS site config</em> to download your file.</p>
-<h2 id="manual-config-file-generation">Manual config file generation</h2>
-<p>If Fivefilters tool doesn't work correctly, take a look at the source (Ctrl + U on Firefox and Chromium). Search for your content and get the <code>class</code> or the <code>id</code> attribute of the area containing what you want.</p>
-<p>Once you've got the id or class, you can write for example one or another of these lines:</p>
+<p>Confirm this area by trying with other articles.<br />
+Having gotten the right area, click on <em>Download Full-Text RSS site config</em> to download the file.</p>
+<h2 id="manual-config-file-generation">Manual Config File Generation:</h2>
+<p>If the Fivefilters tool doesn't work correctly, take a look at the source (Ctrl + U on Firefox and Chromium). Search for your content and get the <code>class</code> or the <code>id</code> attribute of the area containing what you want.</p>
+<p>Once you've gotten the id or class, you can write, for example, one or another of these lines:</p>
 <pre><code>body: //div[@class='myclass']
 body: //div[@id='myid']</code></pre>
-<p>Then, test you file. If you got the right content but you want to strip unnecessary parts, do:</p>
+<p>Then, test the file. If you have received the right content but you want to strip unnecessary parts, do:</p>
 <pre><code>strip: //div[@class='hidden']</code></pre>
 <p>You can look at other options for siteconfig files <a href="http://help.fivefilters.org/customer/portal/articles/223153-site-patterns">here</a>.</p>
                 </section>

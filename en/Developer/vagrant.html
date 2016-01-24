@@ -186,18 +186,18 @@
                         Edit this page on GitHub
                     </a>
                     <h1 id="vagrant">Vagrant</h1>
-<p>In order to allow you to easily set up the required configuration for wallabag, we offer you a Vagrantfile file to be used with <a href="http://www.vagrantup.com">Vagrant</a>.</p>
+<p>In order to allow you to easily set up the required configuration for Wallabag, we offer you a Vagrant file  to be used with <a href="http://www.vagrantup.com">Vagrant</a>.</p>
 <p><a href="https://en.wikipedia.org/wiki/Vagrant_%28software%29">According to Wikipedia,</a></p>
 <pre><code>Vagrant is computer software for creating and configuring virtual development environments. It can be seen as a wrapper around virtualization software such as VirtualBox, KVM, VMware and around configuration management software such as Ansible, Chef, Salt or Puppet.</code></pre>
-<h2 id="use-vagrant-for-wallabag">Use Vagrant for wallabag</h2>
-<p>Here is the procedure to run wallabag inside a Vagrant container:</p>
+<h2 id="using-vagrant-for-wallabag">Using Vagrant for Wallabag:</h2>
+<p>Here is the procedure to run Wallabag inside a Vagrant container:</p>
 <pre><code>wget -O wallabag-dev.zip https://github.com/wallabag/wallabag/archive/dev.zip
 unzip wallabag-dev.zip
 cd wallabag-dev
 vagrant up</code></pre>
-<p>Now, go to <code>http://localhost:8003</code>, wallabag should be available there! (make sure you do not use the port 8003 of your machine for something else before)</p>
-<h2 id="what-did-the-vagrantfile-install-">What did the Vagrantfile install ?</h2>
-<p>The script install a LAMP server, i.e. :</p>
+<p>Now, go to <code>http://localhost:8003</code>, wallabag should be available there! (make sure that port 8003 of your machine is not used for anything else).</p>
+<h2 id="what-did-the-vagrantfile-install">What Did the Vagrantfile Install?:</h2>
+<p>The script installs a LAMP server:</p>
 <ul>
 <li>Ubuntu 14.04</li>
 <li>an Apache2 web server</li>

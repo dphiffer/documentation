@@ -185,18 +185,20 @@
                     <a href="https://github.com/wallabag/documentation/blob/master/en/Administrator/Update.md">
                         Edit this page on GitHub
                     </a>
-                    <h1 id="update-wallabag">Update wallabag</h1>
-<h2 id="update-an-existing-wallabag-installation">Update an existing wallabag installation</h2>
-<p>In order to update your installation, download and unzip the archive into your installation folder. For example on Ubuntu/Debian:</p>
+                    <h1 id="updating-wallabag">Updating Wallabag:</h1>
+<h2 id="updating-an-existing-wallabag-installation">Updating an Existing Wallabag Installation:</h2>
+<p>In order to update your installation: </p>
+<p>Download and unzip the archive into your installation folder. For example on Ubuntu/Debian:</p>
 <pre><code>wget http://wllbg.org/latest
 unzip latest
-rsync -ur wallabag-version-number/* /var/www/html/wallabag/ # could be another location such as /srv/html, /usr/share/nginx/html</code></pre>
-<p>After that, just access wallabag in your browser and follow the instructions to finish the update.</p>
-<p>You can verify at the bottom of the configuration page that you're running the last version.</p>
-<p><strong>If it fails</strong>, just delete the <code>install</code> folder and clear the cache:</p>
+rsync -ur wallabag-version-number/* /var/www/html/wallabag/</code></pre>
+<p><em>Note: This could be another location such as <code>/srv/html</code>, <code>/usr/share/nginx/html</code>, etc.</em></p>
+<p>Then, connect to Wallabag in your browser and follow the instructions to finish the update.</p>
+<p>You can verify at the bottom of the configuration page if you're running the latest version.</p>
+<p><strong>If it fails</strong>, delete the <code>install</code> folder and clear the cache:</p>
 <pre><code>cd /var/www/html/wallabag/
 rm -r cache/* install/</code></pre>
-<p>Clearing the cache is also possible in the configuration page, clicking on the link `Delete Cache.</p>
+<p>Clearing the cache is also possible in the configuration page by clicking on the <code>Delete Cache</code> link.</p>
                 </section>
 
             </div>
