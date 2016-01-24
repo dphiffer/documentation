@@ -1,0 +1,26 @@
+# Wallabag, Yunohost et les applications mobiles
+
+## Introduction
+Il existe un projet qui consiste à se protéger sur Internet : la [Brique Internet](https://labriqueinter.net). Celle-ci permet entre-autre de s'auto-héberger grâce à une instance [Yunohost](http://yunohost.org). Dans cette instance, Wallabag y figure comme application officielle. Étant donné que ce dernier est une application de "*lire plus tard*", il est intéressant d'avoir l'application sur son téléphone mobile ou tablette Android, iOS et/ou Windows Phone.
+
+## Android
+Si vous n'avez pas l'application Android, foncez sur les magasins [Google Play](https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche) ou [F-Droid](https://f-droid.org/repository/browse/?fdfilter=wallabag&fdid=fr.gaulupeau.apps.InThePoche).
+
+Une fois que cela est installé, il faut configurer l'application afin de lier votre téléphone Android et votre Wallabag.
+
+1. Dans le coin supérieur droit, appuyez sur le menu et rendez vous dans les paramètres - dernière option ;
+2. Tapez l'URL de votre Wallabag de la même façon que vous l'avez indiquée pour votre serveur Yunohost ;
+    :bangbang: *Assurez-vous que votre serveur Yunohost-Wallabag soit accessible de l'extérieur !
+3. Dans l'application web, dans la configuration, il y a une option "**FEEDS**" ;
+   * Dans cette partie, il y a votre "*token*", une longue chaîne de caractères alphanumériques. Si il n'est pas généré, générez-le ; 
+   * Plus bas, il y a votre "*user ID*", un numéro nécessaire pour l'application ;
+4. Entre les valeurs recueillies précedemment, dans les champs correspondants ; 
+   * Veillez à acceptez tous les types de certificats SSL, ils sont auto-signés par Yunohost ; 
+5. Juste en dessous figurent l'*authentification HTTP*, il s'agit des données nécessaires pour vous connecter en tant qu'**utilisateur** sur Yunohost ;
+6. Vérifiez la connexion ;
+7. Synchronisez votre serveur et votre mobile Android ; 
+8. Tout est prêt !
+
+## iOS
+
+## Windows Phone
