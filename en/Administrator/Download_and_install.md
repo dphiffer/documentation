@@ -71,7 +71,7 @@ Note : If you're using IIS as a webserver, you have to disable *Anonymous Authen
 
 ### Twig installation:
 Wallabag is built with Twig, a template library. You have to download it for Wallabag to work.
-If you cannot install `composer` (for example in the case of shared hosting), we suggest you download a file which includes `Twig`. This file can be downloaed from the page `http://yourserver.com/wallabag/install/index.php` (section TWIG INSTALLATION) or directly at [http://wllbg.org/vendor](http://wllbg.org/vendor). Uncompress it in your Wallabag directory.
+If you cannot install `composer` (for example in the case of shared hosting), we suggest you download a file which includes `Twig`. This file can be downloaed from the page `http://yourserver.com/wallabag/index.php` (section TWIG INSTALLATION) or directly at [http://wllbg.org/vendor](http://wllbg.org/vendor). Uncompress it in your Wallabag directory.
 
 Otherwise, you can use Composer to install `Twig` by launching `composer` from your Wallabag directory (in the case of Ubuntu/Debian: <code>/var/www/html/wallabag/</code>) by following the commands written on screen:
 
